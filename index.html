@@ -1,0 +1,99 @@
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <h1>
+            Introduction to GitHub
+        </h1>
+        <p>
+            Today, we'll begin discussing web publishing!
+        </p>
+        <p>
+            First, we'll establish a development workflow to create a
+            website directory. Up until this point, we've been developing within a sandbox editor that allows us to make
+            changes to our code and immediately see these changes, but honestly, this is an unrealistic and slightly
+            irresponsible way to use the web...
+        </p>
+        <p>
+            As we've seen in our readings, any content/change that a developer publishes to the web requires an advanced
+            network (infrastructure) of host databases housing that content, global network servers retrieving it, and
+            then, local internet service providers delivering it all to a user.
+        </p>
+        <p>
+            Everything that we do on the web is completely reliant on this network functioning reliably, and as artists,
+            designers, and developers, we can take precautions to ease this process such as only deploying changes when
+            absolutely necessary, reducing file sizes when possible, and generally being mindful of the processing
+            workload that we expect from website visitors' browsers and machines. I especially recommend being mindful
+            of performance concerning the images that we host: reducing file dimensions to a maximum of 1000px (along
+            the longest edge) at either 72 or 144 dpi and downgrading the quality (using Photoshop, File > Export > Save for Web) to a maximum
+            of 200-400 kB (.2-.4 mB).
+        </p>
+        <p>
+            For the final project of Section 1 and for many future projects, we will use GitHub to create our websites.
+            GitHub is an open-source development platform and community used by programmers and developers working with
+            many
+            coding languages. We will use this platform to "commit" (publish) HTML and CSS markup content, host files,
+            and
+            organize our code "repositories" (directories) to link all of this content.
+        <p>
+            For this project, you may choose to utilize GitHub Desktop to "pull"/"clone" (download/copy) your code, make
+            local edits, and "push" (deploy/publish) those edits to your repository. When this process occurs
+            seamlessly, making live edits and changes to your code, it is referred to as "continuous integration" and
+            "continuous delivery/deployment" (CI/CD) pipelines. Please note that that the free version of GitHub Desktop
+            limits users to 2,000 CI/CD minutes per month. For this project, I don't foresee this being a problem, but
+            you may find that this is insufficient, and for this reason, our demo is going to be oriented toward
+            establishing a work environment where you can make local edits and manually commit those edits to GitHub.
+        </p>
+        <p>
+            First, we need to set up a GitHub account. I recommend some iteration of your Penn Email (minus the @[...]) as your username:
+        </p>
+
+        <div id="slider">
+            <input type="radio" name="slider" id="slide1nav" checked>
+            <input type="radio" name="slider" id="slide2nav">
+            <input type="radio" name="slider" id="slide3nav">
+            <div id="slides">
+                <div class="inner">
+                    <img src="/1.png" alt="GitHub landing page" class="slide slide_1">
+                    <img src="/2.png" alt="GitHub email signup" class="slide slide_2">
+                    <img src="/3.png" alt="GitHub annoying robot check" class="slide slide_3">
+                </div>
+            </div>
+        </div>
+        <p>
+            Next, we need to initialize our first repository (use [username].github.io) and give it an index.html file:
+        </p>
+        <div id="slider">
+            <input type="radio" name="slider" id="slide1nav">
+            <input type="radio" name="slider" id="slide2nav">
+            <input type="radio" name="slider" id="slide3nav">
+            <input type="radio" name="slider" id="slide4nav">
+            <div id="slides">
+                <div class="inner">
+                    <img src="/4.png" alt="New is highlighted on the user page" class="slide slide_1">
+                    <img src="/5.png" alt="Using user.github.io on the Create a new repository page " class="slide slide_2">
+                    <img src="/6.png" alt="creating a new file is highlighted on the repository page" class="slide slide_3">
+                    <img src="/7.png" alt="The file is titled index.html and Hello, World! is written inside the file" class="slide slide_4">
+                </div>
+            </div>
+        </div>
+        <p>
+            And lastly, we need to navigate to Settings > Pages to tell GitHub Pages to recognize this repository as the home directory (main branch) for our website:
+        </p>
+        <div id="slider">
+            <input type="radio" name="slider" id="slide1nav">
+            <input type="radio" name="slider" id="slide2nav">
+            <div id="slides">
+                <div class="inner">
+                    <img src="/8.png" alt="index.html now exists on the repository page" class="slide slide_1">
+                    <img src="/9.png" alt="GitHub landing page" class="slide slide_2">
+                </div>
+            </div>
+        </div>
+        <p>
+            Give it a few seconds, and in your browser, navigate to [username].github.io, and hey! Look at that! You made a website!
+        </p>
+    </div>
+</body>
